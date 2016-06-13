@@ -34,7 +34,7 @@ aws sns subscribe --topic-arn <arn output from create-topic> --protocol email --
 
 ```bash
 
-	aws cloudwatch put_metric_alarm --alarm-name <custom> --alarm-actions <sns arn for notifications> --metric-name <custom> --namespace <custom> --statistic <SampleCount||Average||Sum||Minimum||Maximum> --dimensions "Name=<custom>,Value=<custom>..." --period 300 --evaluation-periods 2 --threshold <custom> --comparison-operator <GreaterThanOrEqualToThreshold||GreaterThanThreshold||LessThanThreshold||LessThanOrEqualToThreshold>
+aws cloudwatch put_metric_alarm --alarm-name <custom> --alarm-actions <sns arn for notifications> --metric-name <custom> --namespace <custom> --statistic <SampleCount||Average||Sum||Minimum||Maximum> --dimensions "Name=<custom>,Value=<custom>..." --period 300 --evaluation-periods 2 --threshold <custom> --comparison-operator <GreaterThanOrEqualToThreshold||GreaterThanThreshold||LessThanThreshold||LessThanOrEqualToThreshold>
 
 ```
 
